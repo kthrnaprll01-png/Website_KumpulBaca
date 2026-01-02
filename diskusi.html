@@ -40,6 +40,14 @@
     .comment-text {
       margin-left: 10px;
     }
+
+    .info-box {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      margin-bottom: 40px;
+    }
   </style>
 </head>
 
@@ -49,7 +57,6 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
   <div class="container">
 
-    <!-- LOGO -->
     <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
       <img 
         src="https://indorelawan-prod.nos.jkt-1.neo.id/uploads/user_avatar/5d5c0fa574a4d28921701b58.jpeg"
@@ -70,27 +77,14 @@
         <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="tentang.html">Tentang Kami</a>
 
-        <!-- DROPDOWN PUSAT PENGETAHUAN -->
         <div class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
             Pusat Pengetahuan
           </a>
           <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="pengetahuan/knowledgehub.html">
-                Knowledge Hub
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="pengetahuan/rekomendasi.html">
-                Rekomendasi Buku
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="pengetahuan/catatan.html">
-                Catatan Literasi
-              </a>
-            </li>
+            <li><a class="dropdown-item" href="pengetahuan/knowledgehub.html">Knowledge Hub</a></li>
+            <li><a class="dropdown-item" href="pengetahuan/rekomendasi.html">Rekomendasi Buku</a></li>
+            <li><a class="dropdown-item" href="pengetahuan/catatan.html">Catatan Literasi</a></li>
           </ul>
         </div>
 
@@ -104,16 +98,41 @@
 <section class="section-padding">
   <div class="container">
 
+    <!-- JUDUL UTAMA (LAMA - TETAP) -->
     <h2 class="text-center mb-3">Diskusi & Berbagi Pengetahuan</h2>
     <p class="text-center mb-4">
       Anggota komunitas dapat bertukar pendapat dan mengembangkan pengetahuan bersama.
     </p>
 
-    <!-- FORM KOMENTAR -->
+    <!-- KONTEN BARU: KNOWLEDGE SHARING -->
+    <div class="info-box">
+      <h4 class="mb-3">🌱 Ruang Berbagi Pengetahuan KumpulBaca</h4>
+      <p>
+        Setiap pertemuan KumpulBaca bukan hanya menjadi ruang membaca, tetapi juga
+        menjadi tempat bertemunya ide, sudut pandang, dan pengalaman baru.
+        Dari sesi membaca bersama, diskusi buku, hingga obrolan santai antar Teman Baca,
+        pengetahuan tumbuh secara alami melalui interaksi sosial.
+      </p>
+      <p>
+        Melalui halaman <strong>Diskusi & Berbagi</strong> ini, proses berbagi pengetahuan
+        tidak berhenti ketika kegiatan offline selesai. Setiap anggota dapat
+        mendokumentasikan pemahaman, bertanya, memberi tanggapan, serta memperluas
+        wawasan tanpa harus selalu hadir secara langsung di lokasi kegiatan.
+      </p>
+      <p>
+        Hal ini sejalan dengan konsep <em>knowledge management</em>, di mana pengetahuan
+        yang diperoleh secara personal dapat diubah menjadi pengetahuan bersama,
+        tersimpan, dan dapat diakses kembali oleh seluruh komunitas kapan saja.
+        Dengan demikian, KumpulBaca menjadi ekosistem belajar yang berkelanjutan,
+        inklusif, dan saling terhubung.
+      </p>
+    </div>
+
+    <!-- FORM KOMENTAR (LAMA - TETAP) -->
     <textarea class="form-control mb-3" rows="3" placeholder="Tulis komentar Anda..."></textarea>
     <button class="btn btn-primary mb-4">Kirim Komentar</button>
 
-    <!-- LIST DISKUSI -->
+    <!-- LIST DISKUSI (LAMA - TETAP) -->
     <div class="list-group">
 
       <div class="list-group-item">
@@ -148,3 +167,4 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
