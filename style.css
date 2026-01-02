@@ -1,0 +1,45 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfbf6;
+}
+
+.navbar-custom {
+  background-color: #f5efe6;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.hero {
+  background-image: url("https://i.pinimg.com/1200x/9d/aa/e1/9daae1a12d01bdd8056cac83da14c885.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #2c2c2c;
+}
+
+.section-padding {
+  padding: 120px 0 60px;
+}
+
+/* ========================= */
+/* BOX / PEMBATAS SECTION */
+.section-box {
+  background-color: #ffffff; /* putih bersih */
+  border: 1px solid #ddd;    /* garis tipis */
+  border-radius: 12px;       /* sudut membulat */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* bayangan lembut */
+  padding: 30px;
+  margin-bottom: 40px;       /* jarak antar section */
+}
+
+/* CARD BUKU HOVER */
+.card-book {
+  transition: transform 0.2s;
+}
+
+.card-book:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+

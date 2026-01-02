@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Catatan Literasi - KumpulBaca</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfbf6;
+    }
+
+    .navbar-custom {
+      background-color: #f5efe6;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .section-padding {
+      padding: 120px 0 60px;
+    }
+
+    .note-card {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 25px;
+      height: 100%;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .note-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+    }
+
+    .badge-category {
+      background-color: #e9ddc8;
+      color: #5a4633;
+      font-size: 12px;
+    }
+
+    .quote-box {
+      font-style: italic;
+      background: #f8f3ea;
+      border-left: 4px solid #c9b89b;
+      padding: 12px 15px;
+      border-radius: 6px;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+  <div class="container">
+
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="../index.html">
+      <img 
+        src="https://indorelawan-prod.nos.jkt-1.neo.id/uploads/user_avatar/5d5c0fa574a4d28921701b58.jpeg"
+        width="40" height="40"
+        class="me-2 rounded-circle"
+      >
+      KumpulBaca
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-nav ms-auto align-items-center">
+        <a class="nav-link" href="../index.html">Home</a>
+        <a class="nav-link" href="../tentang.html">Tentang Kami</a>
+
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+            Pusat Pengetahuan
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="knowledgehub.html">Knowledge Hub</a></li>
+            <li><a class="dropdown-item" href="rekomendasi.html">Rekomendasi Buku</a></li>
+            <li><a class="dropdown-item active" href="#">Catatan Literasi</a></li>
+          </ul>
+        </div>
+
+        <a class="nav-link" href="../diskusi.html">Diskusi & Berbagi</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<!-- CONTENT -->
+<section class="section-padding">
+  <div class="container">
+
+    <h2 class="text-center mb-3">📝 Catatan Literasi</h2>
+    <p class="text-center mb-5">
+      Ringkasan pemikiran, refleksi, dan pelajaran penting dari buku-buku pilihan komunitas KumpulBaca.
+    </p>
+
+    <div class="row g-4">
+
+      <!-- Filosofi Teras -->
+      <div class="col-md-4">
+        <div class="note-card">
+          <h5>📘 Filosofi Teras</h5>
+          <span class="badge badge-category mb-2 d-inline-block">Self Improvement</span>
+          <p class="mt-3">
+            Buku ini memperkenalkan filsafat Stoikisme dengan bahasa sederhana.
+            Intinya, tidak semua hal berada dalam kendali kita, dan kebahagiaan
+            datang dari kemampuan menerima hal tersebut dengan bijak.
+          </p>
+          <div class="quote-box">
+            “Kita tidak bisa mengendalikan kejadian, tapi kita bisa mengendalikan respon.”
+          </div>
+        </div>
+      </div>
+
+      <!-- Atomic Habits -->
+      <div class="col-md-4">
+        <div class="note-card">
+          <h5>📗 Atomic Habits</h5>
+          <span class="badge badge-category mb-2 d-inline-block">Pengembangan Diri</span>
+          <p class="mt-3">
+            James Clear menjelaskan bahwa perubahan besar berasal dari kebiasaan kecil
+            yang dilakukan secara konsisten setiap hari.
+          </p>
+          <div class="quote-box">
+            “Kesuksesan adalah hasil dari kebiasaan kecil yang diulang.”
+          </div>
+        </div>
+      </div>
+
+      <!-- Bumi Manusia -->
+      <div class="col-md-4">
+        <div class="note-card">
+          <h5>📕 Bumi Manusia</h5>
+          <span class="badge badge-category mb-2 d-inline-block">Fiksi & Sejarah</span>
+          <p class="mt-3">
+            Novel ini menggambarkan perjuangan manusia dalam menghadapi
+            ketidakadilan sosial, kolonialisme, dan keterbatasan akses pendidikan.
+          </p>
+          <div class="quote-box">
+            “Manusia boleh pandai setinggi langit, tapi selama ia tidak menulis, ia akan hilang.”
+          </div>
+        </div>
+      </div>
+
+      <!-- Sapiens -->
+      <div class="col-md-4">
+        <div class="note-card">
+          <h5>📙 Sapiens</h5>
+          <span class="badge badge-category mb-2 d-inline-block">Non-Fiksi</span>
+          <p class="mt-3">
+            Buku ini mengajak pembaca memahami perjalanan panjang umat manusia,
+            dari pemburu-pengumpul hingga masyarakat modern.
+          </p>
+          <div class="quote-box">
+            “Sejarah bukan tentang masa lalu, tapi tentang cara manusia memahami dirinya.”
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

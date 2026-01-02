@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Diskusi & Berbagi - KumpulBaca</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfbf6;
+    }
+
+    .navbar-custom {
+      background-color: #f5efe6;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .section-padding {
+      padding: 100px 0 60px;
+    }
+
+    .list-group-item {
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+
+    .book-title {
+      font-weight: 600;
+    }
+
+    .comment-author {
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    .comment-text {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+  <div class="container">
+
+    <!-- LOGO -->
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+      <img 
+        src="https://indorelawan-prod.nos.jkt-1.neo.id/uploads/user_avatar/5d5c0fa574a4d28921701b58.jpeg"
+        alt="Logo KumpulBaca"
+        width="40"
+        height="40"
+        class="me-2 rounded-circle"
+      >
+      KumpulBaca
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-nav ms-auto align-items-center">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="tentang.html">Tentang Kami</a>
+
+        <!-- DROPDOWN PUSAT PENGETAHUAN -->
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Pusat Pengetahuan
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="pengetahuan/knowledgehub.html">
+                Knowledge Hub
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="pengetahuan/rekomendasi.html">
+                Rekomendasi Buku
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="pengetahuan/catatan.html">
+                Catatan Literasi
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <a class="nav-link active" href="#">Diskusi & Berbagi</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<section class="section-padding">
+  <div class="container">
+
+    <h2 class="text-center mb-3">Diskusi & Berbagi Pengetahuan</h2>
+    <p class="text-center mb-4">
+      Anggota komunitas dapat bertukar pendapat dan mengembangkan pengetahuan bersama.
+    </p>
+
+    <!-- FORM KOMENTAR -->
+    <textarea class="form-control mb-3" rows="3" placeholder="Tulis komentar Anda..."></textarea>
+    <button class="btn btn-primary mb-4">Kirim Komentar</button>
+
+    <!-- LIST DISKUSI -->
+    <div class="list-group">
+
+      <div class="list-group-item">
+        <div class="book-title">📘 Filosofi Teras</div>
+        <div><span class="comment-author">Andi:</span> <span class="comment-text">Ringkasannya sangat membantu untuk memahami Stoikisme.</span></div>
+        <div><span class="comment-author">Sari:</span> <span class="comment-text">Kapan kita ada sesi membaca bersama buku ini?</span></div>
+      </div>
+
+      <div class="list-group-item">
+        <div class="book-title">📕 Bumi Manusia</div>
+        <div><span class="comment-author">Rizki:</span> <span class="comment-text">Saya jadi tertarik membaca bukunya setelah membaca ringkasan ini.</span></div>
+        <div><span class="comment-author">Lina:</span> <span class="comment-text">Apakah akan ada diskusi offline untuk buku ini?</span></div>
+      </div>
+
+      <div class="list-group-item">
+        <div class="book-title">📗 Atomic Habits</div>
+        <div><span class="comment-author">Budi:</span> <span class="comment-text">Tips membentuk kebiasaan di buku ini sangat praktis!</span></div>
+        <div><span class="comment-author">Maya:</span> <span class="comment-text">Kapan kegiatan #SejamMembaca berikutnya diadakan?</span></div>
+      </div>
+
+      <div class="list-group-item">
+        <div class="book-title">📙 Sapiens</div>
+        <div><span class="comment-author">Fajar:</span> <span class="comment-text">Ringkasan ini membuat saya memahami sejarah manusia dengan lebih jelas.</span></div>
+        <div><span class="comment-author">Dewi:</span> <span class="comment-text">Apakah komunitas akan mengadakan sesi diskusi online untuk buku ini?</span></div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

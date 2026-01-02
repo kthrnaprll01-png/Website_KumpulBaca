@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Rekomendasi Buku - KumpulBaca</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfbf6;
+    }
+
+    .navbar-custom {
+      background-color: #f5efe6;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .section-padding {
+      padding: 120px 0 60px;
+    }
+
+    .card {
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      height: 320px;
+      object-fit: cover;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+  <div class="container">
+
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="../index.html">
+      <img 
+        src="https://indorelawan-prod.nos.jkt-1.neo.id/uploads/user_avatar/5d5c0fa574a4d28921701b58.jpeg"
+        width="40" height="40"
+        class="me-2 rounded-circle"
+      >
+      KumpulBaca
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-nav ms-auto align-items-center">
+        <a class="nav-link" href="../index.html">Home</a>
+        <a class="nav-link" href="../tentang.html">Tentang Kami</a>
+
+        <!-- DROPDOWN -->
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+            Pusat Pengetahuan
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="knowledgehub.html">Knowledge Hub</a></li>
+            <li><a class="dropdown-item active" href="#">Rekomendasi Buku</a></li>
+            <li><a class="dropdown-item" href="catatan.html">Catatan Literasi</a></li>
+          </ul>
+        </div>
+
+        <a class="nav-link" href="../diskusi.html">Diskusi & Berbagi</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<!-- CONTENT -->
+<section class="section-padding">
+  <div class="container">
+
+    <h2 class="mb-4 text-center">📚 Rekomendasi Buku</h2>
+    <p class="text-center mb-5">
+      Pilihan buku inspiratif hasil kurasi komunitas KumpulBaca untuk menemani perjalanan literasimu.
+    </p>
+
+    <div class="row g-4">
+
+      <!-- Filosofi Teras -->
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="https://imgv2-2-f.scribdassets.com/img/document/407689652/original/ec1d808baa/1?v=1">
+          <div class="card-body">
+            <h6 class="fw-bold">Filosofi Teras</h6>
+            <p class="text-muted mb-1">Self Improvement</p>
+            <p class="small">
+              Buku pengantar Stoikisme modern yang membantu pembaca mengelola emosi, kecemasan,
+              dan tekanan hidup sehari-hari.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Atomic Habits -->
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="https://ebooks.gramedia.com/ebook-covers/49184/image_highres/ID_AHPK2019MTH09AHP.jpg">
+          <div class="card-body">
+            <h6 class="fw-bold">Atomic Habits</h6>
+            <p class="text-muted mb-1">Self Improvement</p>
+            <p class="small">
+              Membahas perubahan kecil yang konsisten untuk membangun kebiasaan baik dan
+              menghilangkan kebiasaan buruk.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bumi Manusia -->
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1565658920i/1398034.jpg">
+          <div class="card-body">
+            <h6 class="fw-bold">Bumi Manusia</h6>
+            <p class="text-muted mb-1">Fiksi & Sejarah</p>
+            <p class="small">
+              Novel klasik Pramoedya Ananta Toer yang menggambarkan perjuangan identitas,
+              pendidikan, dan ketidakadilan kolonial.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sapiens -->
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="https://cdn.gramedia.com/uploads/items/591701404_sapiens.jpg">
+          <div class="card-body">
+            <h6 class="fw-bold">Sapiens</h6>
+            <p class="text-muted mb-1">Non-Fiksi</p>
+            <p class="small">
+              Mengulas sejarah manusia dari zaman purba hingga modern dengan sudut pandang
+              ilmiah dan reflektif.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

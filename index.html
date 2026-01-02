@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>KumpulBaca</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfbf6;
+    }
+
+    .navbar-custom {
+      background-color: #f5efe6;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .hero {
+      background-image: url("https://i.pinimg.com/1200x/9d/aa/e1/9daae1a12d01bdd8056cac83da14c885.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      color: #2c2c2c;
+    }
+
+    .section-padding {
+      padding: 120px 0 60px;
+    }
+
+    .navbar .login-icon svg {
+      fill: #007bff;
+      transition: transform 0.2s;
+    }
+
+    .navbar .login-icon svg:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+  <div class="container">
+
+    <!-- LOGO -->
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+      <img 
+        src="https://indorelawan-prod.nos.jkt-1.neo.id/uploads/user_avatar/5d5c0fa574a4d28921701b58.jpeg" 
+        alt="Logo KumpulBaca"
+        width="40"
+        height="40"
+        class="me-2 rounded-circle"
+      >
+      KumpulBaca
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-nav ms-auto align-items-center">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="tentang.html">Tentang Kami</a>
+
+        <!-- DROPDOWN PUSAT PENGETAHUAN -->
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Pusat Pengetahuan
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="pengetahuan/knowledgehub.html">
+                Knowledge Hub
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="pengetahuan/rekomendasi.html">
+                Rekomendasi Buku
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="pengetahuan/catatan.html">
+                Catatan Literasi
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <a class="nav-link" href="diskusi.html">Diskusi & Berbagi</a>
+
+        <!-- LOGIN ICON -->
+        <a class="nav-link ms-3 login-icon" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-person-fill" viewBox="0 0 16 16">
+            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container text-center">
+    <h1 class="display-5 fw-semibold">
+      Selamat Datang di KumpulBaca
+    </h1>
+    <p class="lead">
+      Ruang berbagi literasi dan pengetahuan bagi generasi muda
+    </p>
+
+    <a href="pengetahuan/knowledgehub.html" class="btn btn-primary btn-lg mt-3">
+      Knowledge Hub
+    </a>
+  </div>
+</section>
+
+<!-- LOGIN MODAL -->
+<div class="modal fade" id="loginModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Username</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
